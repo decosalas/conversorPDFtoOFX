@@ -104,7 +104,7 @@ export default function Home() {
 
       // Extrair informações da conta e saldo
       let accountNumber = "62909-X";
-      let agencia = "2901-7";
+      let _agencia = "2901-7"; // Prefixar com _ indica uma variável não usada intencionalmente
       let periodStart = "20250201";
       let periodEnd = "20250224";
       let balance = "0.00";
@@ -187,7 +187,7 @@ for (let i = 0; i < lines.length; i++) {
   const dateMatch = currentLine.match(/(\d{2})\/(\d{2})\/(\d{4})/);
   
   if (dateMatch) {
-    const [_, day, month, year] = dateMatch;
+    const [, day, month, year] = dateMatch; // Note a vírgula sem nome de variável
     const date = `${year}${month}${day}`;
     
     // Procurar por valor monetário na linha atual ou nas 3 próximas linhas
