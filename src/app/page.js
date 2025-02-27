@@ -104,7 +104,6 @@ export default function Home() {
 
       // Extrair informações da conta e saldo
       let accountNumber = "62909-X";
-      let _agencia = "2901-7"; // Prefixar com _ indica uma variável não usada intencionalmente
       let periodStart = "20250201";
       let periodEnd = "20250224";
       let balance = "0.00";
