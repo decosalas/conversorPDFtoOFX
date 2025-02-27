@@ -103,18 +103,9 @@ export default function Home() {
       console.log("Texto extraído:", fullText);
 
       // Extrair informações da conta e saldo
-      let accountNumber = "62909-X";
-      let _agencia = "2901-7"; // Prefixar com _ indica uma variável não usada intencionalmente
       let periodStart = "20250201";
       let periodEnd = "20250224";
       let balance = "0.00";
-
-      // Tentar extrair número da conta e agência
-      const accountMatch = fullText.match(/Agência\s*\/\s*Conta\s*(\d+)[- ](\w+)/i);
-      if (accountMatch) {
-        agencia = accountMatch[1];
-        accountNumber = accountMatch[2];
-      }
 
       // Tentar extrair datas do período
       const periodMatch = fullText.match(/Período\s*(\d{2})\/(\d{2})\/(\d{4})\s*a\s*(\d{2})\/(\d{2})\/(\d{4})/i);
